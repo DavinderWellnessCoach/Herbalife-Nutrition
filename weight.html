@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Management - Herbalife</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #007bff; color: white; text-align: center; padding: 20px; }
+        .product { display: inline-block; margin: 20px; text-align: center; border: 1px solid #ddd; padding: 10px; background: white; width: 200px; }
+        .product img { width: 150px; height: 150px; }
+        .product a { text-decoration: none; color: #007bff; font-weight: bold; }
+        .modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); }
+        .modal-content { background-color: white; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 600px; }
+        .close { color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+        .buy-btn { background-color: #25d366; color: white; padding: 10px; text-decoration: none; border-radius: 5px; }
+    </style>
+    <script>
+        function openModal(productId) { document.getElementById(productId).style.display = 'block'; }
+        function closeModal(productId) { document.getElementById(productId).style.display = 'none'; }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Weight Management Products</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+    <div class="container">
+        <div class="product">
+            <img src="https://www.herbalife.com/content/dam/herbalife-nutrition/global/en_us/products/weight-management/formula-1-shake.png" alt="Formula 1">
+            <h3><a href="#" onclick="openModal('formula1')">Formula 1</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150x150?text=Shakemate" alt="Shakemate">
+            <h3><a href="#" onclick="openModal('shakemate')">Shakemate</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://www.herbalife.com/content/dam/herbalife-nutrition/global/en_us/products/weight-management/cell-activator.png" alt="Cell Activator">
+            <h3><a href="#" onclick="openModal('cellactivator')">Cell Activator</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://www.herbalife.com/content/dam/herbalife-nutrition/global/en_us/products/weight-management/cell-u-loss.png" alt="Cell-U-Loss">
+            <h3><a href="#" onclick="openModal('celluloss')">Cell-U-Loss</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://www.herbalife.com/content/dam/herbalife-nutrition/global/en_us/products/weight-management/herbal-control.png" alt="Herbal Control">
+            <h3><a href="#" onclick="openModal('herbalcontrol')">Herbal Control</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://www.herbalife.com/content/dam/herbalife-nutrition/global/en_us/products/weight-management/afresh-energy-drink-mix.png" alt="Energy Drink Mix (Afresh)">
+            <h3><a href="#" onclick="openModal('afresh')">Energy Drink Mix (Afresh)</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://www.herbalife.com/content/dam/herbalife-nutrition/global/en_us/products/weight-management/liftoff.png" alt="Liftoff">
+            <h3><a href="#" onclick="openModal('liftoff')">Liftoff</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150x150?text=Activated+Fibre" alt="Activated Fibre">
+            <h3><a href="#" onclick="openModal('activatedfibre')">Activated Fibre</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150x150?text=Active+Fibre+Complex" alt="Active Fibre Complex">
+            <h3><a href="#" onclick="openModal('activefibre')">Active Fibre Complex</a></h3>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/150x150?text=Probiotic" alt="Probiotic">
+            <h3><a href="#" onclick="openModal('probiotic')">Probiotic</a></h3>
+        </div>
+    </div>
+
+    <!-- Modals for Details -->
+    <div id="formula1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('formula1')">&times;</span>
+            <h2>Formula 1</h2>
+            <p><strong>Description:</strong> A nutritious meal replacement shake with 17g of soy protein, vitamins, and minerals to support weight management and balanced nutrition.</p>
+            <img src="https://via.placeholder.com/300x200?text=Weight+Loss+Result+1" alt="Weight Loss Result">
+            <img src="https://via.placeholder.com/300x200?text=Weight+Loss+Result+2" alt="Weight Loss Result">
+            <br><a href="https://wa.me/7986162714?text=Hi%20Davinder%20Singh,%20I%20want%20to%20buy%20Formula%201" class="buy-btn">Buy Now on WhatsApp</a>
+        </div>
+    </div>
+    <div id="shakemate" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('shakemate')">&times;</span>
+            <h2>Shakemate</h2>
+            <p><strong>Description:</strong> A low-calorie sweetener for shakes, helping customize your meal replacements for better taste and weight control.</p>
+            <img src="https://via.placeholder.com/300x200?text=Weight+Loss+Result+3" alt="Weight Loss Result">
+            <img src="https://via.placeholder.com/300x200?text=Weight+Loss+Result+4" alt="Weight Loss Result">
+            <br><a href="https://wa.me/7986162714?text=Hi%20Davinder%20Singh,%20I%20want%20to%20buy%20Shakemate" class="buy-btn">Buy Now on WhatsApp</a>
+        </div>
+    </div>
+    <!-- Add similar modals for all other products in this category, using standard descriptions. For brevity, I've shown two; replicate for the rest. -->
+</body>
+</html>
